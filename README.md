@@ -15,7 +15,7 @@ customizable Nike Air Force 1 shoes:
 ![Screenshot of Nike shoes](img/nikeshoes.png)
 
 Tragically, they were unavailable. In an era when so many sellers offer to notify
-buyers when items are back in stock, Nike did not provide - and stil has not 
+buyers when items are back in stock, Nike did not provide - and still has not 
 provided - such an option. Thus, during a stale summer break, I created this 
 program to assist me.
 
