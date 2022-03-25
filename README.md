@@ -3,8 +3,8 @@ nike-scraper
 
 _Basic webscraper that checks item availability_
 
-Description
------------
+Description and Backstory
+-------------------------
 
 **nike-scraper** uses Twilio, Selenium, and Heroku to constantly check for an
 item's online availability.
@@ -14,14 +14,13 @@ customizable Nike Air Force 1 shoes:
 
 ![Screenshot of Nike shoes](img/nikeshoes.png)
 
-Tragically, they were unavailable. In an
-era when so many sellers provide a feature for buyers to receive notifications 
-whenever an item has been restocked, Nike did not provide - and stil has not
-provided - such an option. Thus, during a stale summer break, I created the
-following program to assist me.
+Tragically, they were unavailable. In an era when so many sellers offer to notify
+buyers when items are back in stock, Nike did not provide - and stil has not 
+provided - such an option. Thus, during a stale summer break, I created this 
+program to assist me.
 
 The code included in this repository is a modified version of the original code.
-The new code makes it easy for any user to download and slightly modify the 
+The new code makes it easy for any user to download and slightly configure the 
 Python script to fit their needs.
 
 Usage
@@ -41,9 +40,9 @@ neither particularly relevant nor necessary in this case.
 The following instructions help set up the Heroku app so that it can properly access
 Google Chrome with nike_scraper.py and the Selenium Webdriver.
 
-Continue to the "Settings" tab on your new app profile page. Under
-the tab, find the "Config Vars" section, choose "Reveal Config Vars", and add the 
-following two Key/Value pairs:
+Continue to the "Settings" tab on the new app profile page. Under the tab, find the 
+"Config Vars" section, choose "Reveal Config Vars", and add the following two 
+Key/Value pairs:
 
 ![Screenshot of Heroku Config Vars](img/keyvalue.png)
 
@@ -57,10 +56,10 @@ convenience, I also have the Key/Value pairs included for copying and pasting:
 Next, find the "Buildpacks" section, which should be directly under the "Config
 Vars" section. The "Buildpacks" are the scripts that will run after app deployment.
 In this case, the included scripts will install Python, Google Chrome, and Chromedriver
-(The Google Chrome and Chromedriver downloaded are located by the "Config Vars" keys). 
+(the downloaded Google Chrome and Chromedriver are located by the "Config Vars" keys). 
 Choose "Add buildpack", and include three buildpacks: Python (which should conveniently 
-be an "officially supported" buildpack that the user can simply click on), Google 
-Chrome, and Chromedriver.
+be an "officially supported" buildpack that the user can simply click), Google Chrome, 
+and Chromedriver.
 
 ![Screenshot of Heroku Python Buildpack](img/pythonbuildpack.png)
 ![Screenshot of Heroku Google Chrome Buildpack](img/googlechromebuildpack.png)
@@ -89,7 +88,9 @@ directory:
 
 `heroku ps:scale worker=1`
 
-Now, the code should be fully running! To turn off the dyno, use the following command:
+Now, the code should be fully running! To turn off the dyno, use the following command
+in the project directory:
 
 `heroku ps:scale worker=0`
 
+Happy shopping! :)
