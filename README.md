@@ -24,7 +24,7 @@ Usage
 -----
 
 _Note: The user must set up a personal Twilio account and fill in any 
-corresponding information in the following box of code:
+corresponding information in the following box of code:_
 
 ![Screenshot of code where extra information must be filled in](img/fillincode.png)
 
