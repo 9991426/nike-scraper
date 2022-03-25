@@ -51,6 +51,7 @@ that was written in nike_scraper.py and replace it with its corresponding value.
 convenience, I also have the Key/Value pairs included for copying and pasting:
 
 `Key: CHROMEDRIVER_PATH          Value: /app/.chromedriver/bin/chromedriver`
+
 `Key: GOOGLE_CHROME_BIN          Value: /app/.apt/usr/bin/google-chrome`
 
 Next, find the "Buildpacks" section, which should be directly under the "Config
@@ -68,6 +69,7 @@ and Chromedriver.
 I have also included the Github links for the Google Chrome and Chromedriver buildpacks:
 
 `https://github.com/heroku/heroku-buildpack-google-chrome`
+
 `https://github.com/heroku/heroku-buildpack-chromedriver`
 
 When done, the "Buildpack" list should look like the following:
